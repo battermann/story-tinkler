@@ -16,6 +16,6 @@ Run container:
 
     docker run -d -p 5000:5000 -e PORT=5000 story-tinkler
 
-Now open [http://localhost:5000](http://localhost:5000) in your browser. The app will take a few seconds to build, then you should see a page containing your story.
+Now open [http://localhost:5000](http://localhost:5000) in your browser. You should see a page containing your story.
 
 This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
