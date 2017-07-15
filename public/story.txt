@@ -1,0 +1,184 @@
+***
+- id: beach
+
+## Treasure Island
+
+![alt text](/beach.jpg "beach")
+
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="http://unsplash.com/@jasperboer?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jasper Boer"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Jasper Boer</span></a>
+
+You wake up and find yourself lying on a beautiful caribbean beach.
+
+There is a boat tied to palm tree.
+
+Behind you there is a thick jungle
+
+You can decide if you want to …
+
+* Take the boat and paddle around the island?
+* Enter the jungle and see what you find there?
+
+- continue:
+    - prompt: Take the boat
+      next: boat
+    - prompt: Enter the jungle
+      next: jungle    
+
+***
+-id: jungle
+
+## The Jungle
+
+You fight your way through the thick jungle. And suddenly you see a cave in front of you.
+
+Do you dare to enter the cave?
+
+- continue:
+    - prompt: Go inside the cave
+      next: cave
+
+***
+-id: cave
+
+## The Cave
+
+You enter the cave and go deeper and deeper inside.
+
+It is very dark now but in the distance you see glimpse of light. As you get closer, you can see that there is an exit.
+
+Outside you can see the spires of a building, probably an old castle.
+
+Also to your left there is an entrance to a very dark tunnel.
+
+Do you want to…
+
+* Leave the cave?
+* Enter the dark tunnel?
+
+- continue:
+    - prompt: Leave the cave
+      next: castle
+    - prompt: Enter the tunnel
+      next: tunnel
+
+***
+-id: tunnel
+
+## The Tunnel
+
+Go further, deeper and deeper inside. Everything is black and suddenly you hear a loud flattering noise coming from all over the place.
+
+Bats!
+
+You better get out of here, fast.
+
+***
+- id: boat
+
+## The Boat
+
+You untie the boat and start paddling around the island.
+
+On the other side of the island there is a mysterious castle.
+
+Just when you decided to go ashore you see something shining from under water.
+
+Do you want to…
+
+* Go in the water to dive for the flashy thing?
+* Go ashore and check out the castle?
+
+- continue:
+    - prompt: Dive for shining thing
+      next: dive
+    - prompt: Go ashore to castle
+      next: castle
+
+***
+-id: dive
+
+## The Dive
+
+You go in the water, take a deep breath, and dive.
+
+You grab the shining thing. It is a beautiful ring. You decide to keep it. But is this the treasure?
+
+***
+-id: castle
+
+## The Castle
+
+You are standing in front of a magical castle with a large wooden door.
+
+On the side of the castle runs a little creek.
+
+Do you dare to knock?
+
+Or do you rather want to go down to the creek and see what is there?
+
+- continue:
+    - prompt: Knock on wooden door
+      next: knock
+    - prompt: Go towards the creek
+      next: creek
+
+***
+- id: creek
+
+## The Creek
+
+You get to the creek. The water is very fresh and clear and you decide to take a drink.
+
+That feels good!
+
+The edges of the creek are vegetated so heavily that there is no further passing possible.
+
+You have to go back.
+
+***
+-id: knock
+
+## The Wizard
+
+The door opens slowly.
+
+In the back of a shadowy room there is an old man in a long robe with a large hat.
+
+He says:
+
+> <i>"I cover cities and destroy mountains, I make men blind, yet help them see. Who am I?"</i>
+
+Do you know the answer? Then choose wisely:
+
+- continue:
+    - prompt: The answer starts with S…
+      next: s
+    - prompt: The answer starts with P…
+      next: p
+    - prompt: The answer starts with A…
+      next: a
+
+***
+- id: s
+
+## The Answer Is "Sand"
+
+The correct answer is "Sand".
+
+You solved the mystery of the island. You helped to bury all its jinx and will be rewarded richly.
+
+![alt text](https://media.giphy.com/media/uTuLngvL9p0Xe/giphy.gif "treasure")
+
+***
+- id: p
+
+## Sorry, Not Correct
+
+Whatever you had in mind, it is not correct.
+
+***
+- id: a
+
+## Sorry, Not Correct
+
+Whatever you had in mind, it is not correct.
